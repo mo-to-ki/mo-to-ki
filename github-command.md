@@ -4,7 +4,7 @@
     configファイルの編集
 
 <a id=config></a>
-## grep
+## git config
 `github`の`config`ファイルを設定するためのコマンド
 ```shell
 git config --local -e
