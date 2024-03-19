@@ -46,10 +46,3 @@ grep 'search_string' file1.txt file2.txt
 find /path/ -type f -name '*search_string*'
 ```
 このコマンドでは、`search_string`をファイル名に含んだファイルを検索している。  
-その他のオプション
-
-**複数の条件で検索**
-```shell
-grep -r 'search_string' /path/
-```
-ディレクトリとそのサブディレクトリ内の全ファイルを再帰的に検索
