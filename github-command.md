@@ -1,7 +1,7 @@
 # github-command
 目次
 > [git config](#config)  
-    ファイル内の文字列検索
+    configファイルの編集
 
 <a id=config></a>
 ## grep
