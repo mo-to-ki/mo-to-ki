@@ -5,8 +5,9 @@
 
 <a id=config></a>
 ## git config
-`github`の`config`ファイルを設定するためのコマンド
+
+`github`の`config`ファイルを設定するためのコマンド  
+このコマンドでは、`viエディタ`でローカルの`config`ファイルを設定することができる。
 ```shell
 git config --local -e
 ```
-このコマンドでは、`viエディタ`で`config`の設定を行うことができる。
