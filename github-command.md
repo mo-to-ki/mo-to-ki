@@ -17,7 +17,7 @@
 
 `dev branch`にいる場合、以下で`dev branch`に`merge-branch`を統合する。
 ```shell
-git merge merge-branch
+git merge origin/merge-branch
 ```
 
 <a id=fetch></a>
