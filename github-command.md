@@ -9,6 +9,9 @@
 > [git checkout](#checkout)  
     ブランチの管理
 
+> [git rebase](#rebase)
+    コミットの編集
+
 > [git config](#config)  
     configファイルの編集
 
@@ -34,6 +37,15 @@ git fetch origin
 これでリモートの`old-branch`を元に`new-branch`を作成する。
 ```shell
 git checkout -b new-branch origin/old-branch
+```
+
+<a id=rebase></a>
+## git rebase
+
+コミットを編集する。  
+`{n}`には編集したいコミットの数を入れる。
+```shell
+git rebase -i HEAD~{n}
 ```
 
 <a id=config></a>
