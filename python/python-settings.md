@@ -43,6 +43,11 @@ python -m venv env-name
 source ./env-name/bin/activate
 ```
 
+仮想環境の停止
+```shell
+source ./env_name/Scripts/deactivate
+```
+
 `pip install`すると
 `./lib/{python-version}/site-packages`
-にデータが保存される。
+にデータが保存される
