@@ -9,7 +9,7 @@
 > [git checkout](#checkout)  
     ブランチの管理
 
-> [git rebase](#rebase)
+> [git rebase](#rebase)  
     コミットの編集
 
 > [git config](#config)  
