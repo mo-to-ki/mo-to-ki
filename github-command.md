@@ -18,7 +18,7 @@
 <a id=merge></a>
 ## git merge
 
-`dev branch`にいる場合、以下で`dev branch`にリモート`merge-branch`を統合する。
+`dev branch`にいる場合、以下で`dev branch`にリモートの`merge-branch`を統合する。
 ```shell
 git merge origin/merge-branch
 ```
