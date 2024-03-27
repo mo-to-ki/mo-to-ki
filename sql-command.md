@@ -105,9 +105,19 @@ DESCRIBE table-name;
 ```
 
 テーブルにデータを挿入する。  
+
 ここでは、`users`テーブルに、`name="motoki omamiuda"`のデータを挿入している。
 ```shell
 INSERT INTO user(name) VALUES ("motoki omamiuda");
+```
+
+テーブルを更新する。  
+
+`WHERE`の条件を満たすようなデータを全て更新する。
+```shell
+UPDATE message
+SET user_type = "normal"
+WHERE user_type = "master" AND user_name = "motoki";
 ```
 
 テーブルを削除する。  
