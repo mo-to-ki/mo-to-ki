@@ -22,18 +22,6 @@ grep 'search_string' file-name.txt
 grep -r 'search_string' /path/
 ```
 
-**-i**  
-大文字小文字を区別せずに検索
-```shell
-grep -i 'search_string' filename.txt
-```
-
-**-n**  
-大文字小文字を区別せずに検索
-```shell
-grep -n 'search_string' filename.txt
-```
-
 **other**  
 複数ファイルでの検索
 ```shell
