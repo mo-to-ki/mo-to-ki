@@ -9,7 +9,8 @@
 >  [select](#select)  
     テーブルのデータを取得
 
-**数値型**  
+## データ型
+
 **整数型**  
 TINYINT: 非常に小さな整数  
 SMALLINT: 小さな整数  
@@ -39,9 +40,6 @@ BLOB: バイナリ大オブジェクト
 TEXT: テキストデータ  
 ENUM: 列挙型  
 SET: セット型  
-スペーシャル型  
-JSON: JSON形式のデータ  
-GEOMETRY: 空間データ型
 
 <a id=database></a>
 ## database
