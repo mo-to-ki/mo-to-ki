@@ -85,13 +85,17 @@ SHOW tables;
 
 テーブルを作成する。
 
-ここでは、`id`を`primary key`に指定し、`user`テーブルを作成している。  
-`AUTO_INCREMENT`設定から、`INSERT`した際に`id`の値が割り当てられていなかった場合、自動的に値が挿入される。
+ここでは、`message_id`を`primary key`に指定し、`message`テーブルを作成している。  
+`AUTO_INCREMENT`設定から、`INSERT`した際に`id`の値が割り当てられていなかった場合、自動的に値が挿入される。  
+`DEFAULT CURRENT_TIMESTAMP`によって`created_at`には、データが作成された時刻が自動的に挿入される。  
 ```shell
-CREATE TABLE users (
-    id INT AUTO_INCREMENT,
-    name TEXT,
-    PRIMARY KEY (id)
+CREATE TABLE message ( 
+    message_id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL,
+    reply TEXT NOT NULL,
+    bad_message BOOLEAN DEFAULT FALSE,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP 
 ) DEFAULT CHARSET=utf8;
 ```
 
