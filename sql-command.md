@@ -12,26 +12,33 @@
 ## データ型
 
 **整数型**  
+```
 TINYINT: 非常に小さな整数  
 SMALLINT: 小さな整数  
 MEDIUMINT: 中程度の整数  
 INTまたはINTEGER: 標準的な整数  
 BIGINT: 大きな整数  
-BIT: ビット値  
+BIT: ビット値
+```
 
 **浮動小数点数型**  
+```
 FLOAT: 単精度浮動小数点数  
 DOUBLE: 倍精度浮動小数点数  
-DECIMALまたはNUMERIC: 固定小数点数 
+DECIMALまたはNUMERIC: 固定小数点数
+```
 
 **日付と時間型**  
+```
 DATE: 日付 ('YYYY-MM-DD')  
 TIME: 時間 ('HH:MM:SS')  
 DATETIME: 日付と時間の組み合わせ ('YYYY-MM-DD HH:MM:SS')  
 TIMESTAMP: タイムスタンプ ('YYYY-MM-DD HH:MM:SS')  
 YEAR: 年 (4桁の数字)  
+```
 
-**文字列型**  
+**文字列型** 
+```
 CHAR: 固定長文字列  
 VARCHAR: 可変長文字列  
 BINARY: 固定長バイナリ文字列  
@@ -39,7 +46,8 @@ VARBINARY: 可変長バイナリ文字列
 BLOB: バイナリ大オブジェクト  
 TEXT: テキストデータ  
 ENUM: 列挙型  
-SET: セット型  
+SET: セット型
+```
 
 <a id=database></a>
 ## database
