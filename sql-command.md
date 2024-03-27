@@ -133,10 +133,11 @@ SELECT * FROM users WHERE id = 3;
 時間`datetime`を比較して、条件を満たすものを取得する。  
 
 ここでは、`table-name`内で、  
-`id < 100`の条件を満たすデータを`date`（日付）で降順に整列させ、3番目~4番目の物を取得している。
+`id < 100`の条件を満たすデータを`date`（日付）で降順に整列させ、3番目~4番目の物を取得している。  
+`ASC`で昇順、`DESC`降順に設定できる。
 ```shell
 SELECT * FROM table-name
 WHERE id < 100
-ORDER BY date
-DESC LIMIT 5 OFFSET 2;
+ORDER BY date DESC
+LIMIT 5 OFFSET 2;
 ```
