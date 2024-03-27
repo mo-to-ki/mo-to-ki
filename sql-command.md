@@ -113,7 +113,7 @@ INSERT INTO user(name) VALUES ("motoki omamiuda");
 
 テーブルを更新する。  
 
-`WHERE`の条件を満たすようなデータを全て更新する。
+ここでは、`message`テーブルの`WHERE`条件を満たすようなデータを全て更新している。
 ```shell
 UPDATE message
 SET user_type = "normal"
