@@ -12,14 +12,14 @@
 ## データ型
 
 **整数型**  
-```
-TINYINT: 非常に小さな整数  
-SMALLINT: 小さな整数  
-MEDIUMINT: 中程度の整数  
-INTまたはINTEGER: 標準的な整数  
-BIGINT: 大きな整数  
-BIT: ビット値
-```
+| name          | detail                |
+|---------------|-----------------------|
+| `TINYINT`     | 非常に小さな整数      |
+| `SMALLINT`    | 小さな整数            |
+| `MEDIUMINT`   | 中程度の整数          |
+| `INT` / `INTEGER` | 標準的な整数      |
+| `BIGINT`      | 大きな整数            |
+| `BIT`         | ビット値              |
 
 **浮動小数点数型**  
 ```
