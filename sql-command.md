@@ -8,7 +8,7 @@
 ## database
 
 データベースの一覧を表示する。  
-```shell
+```sql
 SHOW DATABASES;
 ```
 データベースを作成する。  
