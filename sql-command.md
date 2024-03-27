@@ -13,5 +13,17 @@ SHOW DATABASES;
 ```
 データベースを作成する。  
 ```shell
-CREATE DATABASE <span style="color: red; ">database-name</span>;
+CREATE DATABASE database-name;
+```
+データベースを選択する。  
+```shell
+USE database-name;
+```
+データベースを削除する。  
+```shell
+DROP DATABASE database-name;
+```
+エラーハンドリング
+```shell
+DROP DATABASE IF EXIST database-name;
 ```
