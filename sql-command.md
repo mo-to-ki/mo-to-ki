@@ -41,8 +41,7 @@ SHOW tables;
 ```
 
 テーブルを作成する。  
-ここでは、`user`テーブルを作成している。  
-`id`を`primary key`に指定している。  
+ここでは、`id`を`primary key`に指定し、`user`テーブルを作成している。  
 `AUTO_INCREMENT`設定から、`INSERT`した際に`id`の値が割り当てられていなかった場合、自動的に値が挿入される。
 ```shell
 CREATE TABLE users (
