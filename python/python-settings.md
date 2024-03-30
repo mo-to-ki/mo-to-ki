@@ -11,9 +11,18 @@
 `python`の`version`管理を行うことがでる。  
 `brew`ででインストールして、`$PATH`を通すことで使用することがでる。
 
-pyenv にある python のバージョン確認  
+`pyenv`にある`python`のバージョン確認  
 ```shell
 pyenv versions
+```
+`pyenv`でインストール可能なバージョン一覧を表示
+```shell
+pyenv install --list
+```
+
+`pyenv`で`Python`のバージョンをインストール
+```shell
+pyenv install 3.x.x
 ```
 
 グローバル環境の設定  
