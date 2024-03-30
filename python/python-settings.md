@@ -35,7 +35,7 @@ pyenv global python-version
 pyenv local python-version
 ```
 
-pyenv で設定した version の解除  
+`pyenv`で設定した`version`の解除  
 ```shell
 pyenv {local or global} --unset
 ```
