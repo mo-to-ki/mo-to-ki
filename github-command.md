@@ -1,10 +1,14 @@
 # github-command
 目次
-> [git merge](#merge)  
-    ブランチの統合
+
+> [git pull](#pull)  
+    ダウンロードと統合
 
 > [git fetch](#fetch)  
     ダウンロード
+
+> [git merge](#merge)  
+    ブランチの統合
 
 > [git checkout](#checkout)  
     ブランチの管理
@@ -15,12 +19,12 @@
 > [git config](#config)  
     configファイルの編集
 
-<a id=merge></a>
-## git merge
+<a id=pull></a>
+## git pull
 
-`dev branch`にいる場合、以下で`dev branch`にリモートの`merge-branch`を統合する。
+これでリモートの`remote-branch`が`local-branch`に統合される。
 ```shell
-git merge origin/merge-branch
+git pull origin remote-branch:local-branch
 ```
 
 <a id=fetch></a>
@@ -29,6 +33,14 @@ git merge origin/merge-branch
 これでリモートの`origin`がダウンロードされ、`merge`することでローカルに統合できるようになります。
 ```shell
 git fetch origin
+```
+
+<a id=merge></a>
+## git merge
+
+`dev branch`にいる場合、以下で`dev branch`にリモートの`merge-branch`を統合する。
+```shell
+git merge origin/merge-branch
 ```
 
 <a id=checkout></a>
