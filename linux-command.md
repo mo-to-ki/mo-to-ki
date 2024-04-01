@@ -17,9 +17,11 @@ grep 'search_string' file-name.txt
 その他のオプション
 
 **-r**  
-ディレクトリとそのサブディレクトリ内の全ファイルを再帰的に検索
+ディレクトリとそのサブディレクトリ内の全ファイルを再帰的に検索  
+**-l**  
+ファイル名のみを出力
 ```shell
-grep -r 'search_string' /path/
+grep -r  -l 'search_string' /path/
 ```
 
 **other**  
