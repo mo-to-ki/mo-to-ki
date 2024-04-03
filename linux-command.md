@@ -24,12 +24,6 @@ grep 'search_string' file-name.txt
 grep -r  -l 'search_string' /path/
 ```
 
-**other**  
-複数ファイルでの検索
-```shell
-grep 'search_string' file1.txt file2.txt
-```
-
 <a id=find></a>
 ## find
 
