@@ -33,7 +33,7 @@ git pull origin remote-branch:local-branch
 <a id=fetch></a>
 ## git fetch
 
-これでリモートの`origin`がダウンロードされ、`merge`することでローカルに統合できるようになります。
+これでリモートの`origin`がダウンロードされ、`merge`することでローカルに統合できるようになる。
 ```shell
 git fetch origin
 ```
