@@ -13,6 +13,9 @@
 > [git checkout](#checkout)  
     ブランチの管理
 
+> [git clone](#clone)  
+    リポジトリのダウンロード
+
 > [git reset](#reset)  
     コミットのリセット
 
@@ -52,6 +55,14 @@ git merge origin/merge-branch
 これでリモートの`old-branch`を元に`new-branch`を作成する。
 ```shell
 git checkout -b new-branch origin/old-branch
+```
+
+<a id=clone></a>
+## git clone
+
+リモートリポジトリをダウンロードする。  
+```shell
+git clone https://user-name:token@github.com/username/repo.git
 ```
 
 <a id=rebase></a>
