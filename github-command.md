@@ -13,6 +13,9 @@
 > [git checkout](#checkout)  
     ブランチの管理
 
+> [git reset](#reset)  
+    コミットのリセット
+
 > [git rebase](#rebase)  
     コミットの編集
 
@@ -58,6 +61,21 @@ git checkout -b new-branch origin/old-branch
 `{n}`には編集したいコミットの数を入れる。
 ```shell
 git rebase -i HEAD~{n}
+```
+
+<a id=reset></a>
+## git reset
+
+ステージングエリアの情報を保持したままコミットを削除する。  
+`{n}`には削除したいコミットの数を入れる。
+```shell
+git reset --soft HEAD~{n}
+```
+
+作業ディレクトリの情報を保持したままステージングエリアとコミットを削除する。  
+`{n}`には削除したいコミットの数を入れる。
+```shell
+git reset --mixed HEAD~{n}
 ```
 
 <a id=config></a>
