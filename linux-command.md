@@ -4,7 +4,10 @@
     ファイル内の文字列検索
 
 > [find](#find)  
-    特定の文字列を含むファイルを検索
+    特定の文字列を含むファイルやディレクトリを検索
+
+> [which](#which)  
+    特定の文字列を含む実行ファイルを検索を検索
 
 <a id=grep></a>
 ## grep
@@ -27,8 +30,17 @@ grep -r  -l 'search_string' /path/
 <a id=find></a>
 ## find
 
-特定の文字列を含むファイルを検索を行うコマンド  
+特定の文字列を含むファイルやディレクトリの検索を行うコマンド  
 このコマンドでは、`search_string`をファイル名に含んだファイルを検索している。
 ```shell
 find /path/ -type f -name '*search_string*'
+```
+
+<a id=which></a>
+## which
+
+特定の文字列を含む実行ファイルの検索を行うコマンド  
+このコマンドでは、　`python`の実行ファイルを検索している。
+```shell
+which pyhton
 ```
