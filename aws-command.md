@@ -15,8 +15,8 @@
 ```
 
 具体的な管理方法は下記のように  
-.config で [profile {profile}]  
-.credentials で [{profile}]  
+.config ファイル で `[profile {profile}]`  
+.credentials　ファイル で `[{profile}]`  
 のようにプロフィール名を指定している。  
 
 ただし、実際の運用の場合には、誤用を防ぐために`[default]`は使用しない方が良い。
