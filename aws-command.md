@@ -27,7 +27,7 @@ aws configure --profile profile-name
 .credentials　ファイル で `[profile-name]`  
 のようにプロフィール名を指定している。  
 
-.config
+* **.config**
 ```shell:.config
 [profile hoge]
 output = json
@@ -41,7 +41,7 @@ region = {リージョン}
 output = json
 region = {リージョン}
 ```
-.credentials
+* **.credentials**
 ```shell:.credentials
 [hoge]
 aws_access_key_id = {アクセスキー}
