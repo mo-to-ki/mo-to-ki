@@ -14,13 +14,20 @@
     └── .credentials
 ```
 
+認証情報の設定方法は以下のコマンドで行う。  
+以下では、`profile-name`というプロフィール名の認証情報を設定している。  
+
+誤用を防ぐために`--profile`でプロフィール名を指定した方が良い。  
+```shell
+aws configure --profile profile-name
+```
+
 具体的な管理方法は下記のように  
-.config ファイル で `[profile {profile}]`  
-.credentials　ファイル で `[{profile}]`  
+.config ファイル で `[profile profile-name]`  
+.credentials　ファイル で `[profile-name]`  
 のようにプロフィール名を指定している。  
 
-ただし、実際の運用の場合には、誤用を防ぐために`[default]`は使用しない方が良い。
-
+.config
 ```shell:.config
 [profile hoge]
 output = json
@@ -34,6 +41,7 @@ region = {リージョン}
 output = json
 region = {リージョン}
 ```
+.credentials
 ```shell:.credentials
 [hoge]
 aws_access_key_id = {アクセスキー}
