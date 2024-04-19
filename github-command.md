@@ -77,7 +77,7 @@ git clone https://user-name:token@github.com/username/repo.git
 `n`個のコミットを削除する。 
 
 ただし、   
-`--soft`を使った場合、ワーキングエリアとステージングエリアには情報を保持する。 
+`--soft`を使った場合、ワーキングエリアとステージングエリアには情報を保持する。  
 `--mixed`を使った場合、ワーキングエリアには情報を保持する。 
 ```shell
 git reset --soft HEAD~{n}
