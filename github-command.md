@@ -17,6 +17,12 @@
     リポジトリのダウンロード
 
 > [git reset](#reset)  
+    コミットを削除
+
+> [git show](#show)  
+    コミットの変更内容を表示
+
+> [git reset](#reset)  
     コミットのリセット
 
 > [git rebase](#rebase)  
@@ -63,6 +69,26 @@ git checkout -b new-branch origin/old-branch
 リモートリポジトリをダウンロードする。  
 ```shell
 git clone https://user-name:token@github.com/username/repo.git
+```
+
+<a id=reset></a>
+## git reset
+
+`n`個のコミットを削除する。 
+
+ただし、   
+`--soft`を使った場合、ワーキングエリアとステージングエリアには情報を保持する。 
+`--mixed`を使った場合、ワーキングエリアには情報を保持する。 
+```shell
+git reset --soft HEAD~{n}
+```
+
+<a id=show></a>
+## git show
+
+コミットの変更内容を表示する。
+```shell
+git show
 ```
 
 <a id=rebase></a>
