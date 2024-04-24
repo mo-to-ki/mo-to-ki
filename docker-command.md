@@ -1,29 +1,38 @@
 # docker-command
 目次
-> [docker](#image)
+> [image](#image)  
+  `Docker image`を作成するためのコマンド
+
+> [container](#container)  
+  `Docker container`を作成するためのコマンド
+
+> [exec](#exec)  
+  `Docker exec`を作成するためのコマンド
 
 
 <a id=image></a>
-## docker
-
-`python`の`docker`を`pull`して起動するコマンド
-```shell
-docker container run --name python_container -it python:3.9-slim /bin/bash
+## image
+`Dockerfile`から`image`を作成する。  
+```
+# docker image build --tag {docker-image-name} {dockerfile-PATH}
+docker image build --tag docker-test-image .
 ```
 
-これを分割して実行すると以下のようになる  
-
-`docker`の`image`を`docker lab`から取得（今回は`python:3.9-slim`）
-```shell
-docker image pull python:3.9-slim
+<a id=container></a>
+## container
+`image`から`container`を作成する。  
+```
+# docker container run -it --name {docker-container-name} {docker-image-name}
+docker container run -it --name docker-test-container docker-test-image
 ```
 
-名前（今回は`python_container`）を指定して`container`の作成
-```shell
-docker create -it --name python_container /bin/bash
+<a id=exec></a>
+## exec
+起動中の`container`に入る。  
 ```
-
-`container`の起動
-```shell
-docker start python_container
+<a id=container></a>
+## container
+起動中の`container`に入る。  
+```
+docker container exec -it docker-test-container bash
 ```
