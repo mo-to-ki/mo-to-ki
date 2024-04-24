@@ -28,11 +28,7 @@ docker container run -it --name docker-test-container docker-test-image
 
 <a id=exec></a>
 ## exec
-起動中の`container`に入る。  
-```
-<a id=container></a>
-## container
-起動中の`container`に入る。  
+起動中の`container`に入る。    
 ```
 docker container exec -it docker-test-container bash
 ```
