@@ -27,6 +27,12 @@ grep 'search_string' file-name.txt
 grep -r  -l 'search_string' /path/
 ```
 
+**--color=auto**
+検索文字列を色付けして表示
+```shell
+grep --color=auto 'search_string'
+```
+
 <a id=find></a>
 ## find
 
