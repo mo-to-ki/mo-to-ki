@@ -9,6 +9,9 @@
 > [which](#which)  
     特定の文字列を含む実行ファイルを検索を検索
 
+> [alias](#alias)  
+    コマンドのエイリアスを設定
+
 <a id=grep></a>
 ## grep
 ファイル内の文字列検索を行うコマンド
@@ -49,4 +52,13 @@ find /path/ -type f -name '*search_string*'
 このコマンドでは、　`python`の実行ファイルを検索している。
 ```shell
 which pyhton
+```
+
+<a id=alias></a>
+## alias
+
+コマンドを省略して実行するためのエイリアスを設定するコマンド
+```shell
+alias gcm='git commit -m' // sample
+alias ls='ls --color=auto' // sample2
 ```
