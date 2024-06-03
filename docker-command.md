@@ -1,34 +1,48 @@
 # docker-command
 目次
 > [image](#image)  
-  `Docker image`を作成するためのコマンド
+  docker image を作成するためのコマンド
 
 > [container](#container)  
-  `Docker container`を作成するためのコマンド
+  docker container を作成するためのコマンド
 
-> [exec](#exec)  
-  `Docker exec`を作成するためのコマンド
+> [compose](#compose)  
+  docker image と container`を作成するためのコマンド
 
 
 <a id=image></a>
 ## image
-`Dockerfile`から`image`を作成する。  
-```
+
+### build
+Dockerfile から image を作成する。  
+```shell
 # docker image build --tag {docker-image-name} {dockerfile-PATH}
-docker image build --tag docker-test-image .
+
+docker image build --tag test_image .
 ```
 
 <a id=container></a>
 ## container
-`image`から`container`を作成する。  
-```
-# docker container run -it --name {docker-container-name} {docker-image-name}
-docker container run -it --name docker-test-container docker-test-image
+
+### run
+image から container を作成する。  
+```shell
+# docker container run -d -it --name {docker-container-name} {docker-image-name}
+
+docker container run -d -it --name test_container test_image
 ```
 
-<a id=exec></a>
-## exec
-起動中の`container`に入る。    
+### exec
+起動中の container に入る。  
+```shell
+docker container exec -it test_container /bin/bash
 ```
-docker container exec -it docker-test-container bash
+
+<a id=compose></a>
+## compose
+
+## up
+docker image と container を作成する。
+```shell
+docker compose up -d
 ```

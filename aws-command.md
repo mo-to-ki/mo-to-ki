@@ -1,7 +1,7 @@
 # aws-command
 目次
-> [aws-config](#aws)
->   aws　の認証情報を複数管理する方法
+> [aws-config](#aws)  
+    aws　の認証情報を複数管理する方法
 
 
 <a id=aws></a>
