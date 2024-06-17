@@ -1,14 +1,13 @@
 # docker-command
 目次
-> [image](#image)  
-  docker image を作成するためのコマンド
-
-> [container](#container)  
-  docker container を作成するためのコマンド
-
-> [compose](#compose)  
-  docker image と container`を作成するためのコマンド
-
+- [docker-command](#docker-command)
+  - [image](#image)
+    - [build](#build)
+  - [container](#container)
+    - [run](#run)
+    - [exec](#exec)
+  - [compose](#compose)
+    - [up](#up)
 
 <a id=image></a>
 ## image
@@ -41,7 +40,7 @@ docker container exec -it test_container /bin/bash
 <a id=compose></a>
 ## compose
 
-## up
+### up
 docker image と container を作成する。
 ```shell
 docker compose up -d

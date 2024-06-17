@@ -4,39 +4,18 @@
 [ATLASSIAN](#https://www.atlassian.com/ja/git/tutorials)
 
 目次
-
-> [git pull](#pull)  
-    ダウンロードと統合
-
-> [git fetch](#fetch)  
-    ダウンロード
-
-> [git merge](#merge)  
-    ブランチの統合
-
-> [git checkout](#checkout)  
-    ブランチの管理
-
-> [git clone](#clone)  
-    リポジトリのダウンロード
-
-> [git reset](#reset)  
-    コミットを削除
-
-> [git show](#show)  
-    コミットの変更内容を表示
-
-> [git reset](#reset)  
-    コミットのリセット
-
-> [git rebase](#rebase)  
-    コミットの編集
-
-> [git config](#config)  
-    configファイルの編集
-
-> [git reflog](#reflog)  
-    configファイルの編集
+- [github-command](#github-command)
+  - [git pull](#git-pull)
+  - [git fetch](#git-fetch)
+  - [git merge](#git-merge)
+  - [git checkout](#git-checkout)
+  - [git clone](#git-clone)
+  - [git reset](#git-reset)
+  - [git show](#git-show)
+  - [git rebase](#git-rebase)
+  - [git reset](#git-reset-1)
+  - [git config](#git-config)
+  - [git reflog](#git-reflog)
 
 <a id=pull></a>
 ## git pull

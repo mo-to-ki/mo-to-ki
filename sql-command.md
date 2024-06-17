@@ -1,13 +1,10 @@
 # sql-command
 目次
-> [database](#database)  
-    データベース関連
-
-> [table](#table)  
-    テーブル関連
-
-> [select](#select)  
-    テーブルのデータを取得
+- [sql-command](#sql-command)
+  - [データ型](#データ型)
+  - [database](#database)
+  - [table](#table)
+  - [select](#select)
 
 ## データ型
 

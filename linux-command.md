@@ -1,16 +1,10 @@
 # linux-command
 目次
-> [grep](#grep)  
-    ファイル内の文字列検索
-
-> [find](#find)  
-    特定の文字列を含むファイルやディレクトリを検索
-
-> [which](#which)  
-    特定の文字列を含む実行ファイルを検索を検索
-
-> [alias](#alias)  
-    コマンドのエイリアスを設定
+- [linux-command](#linux-command)
+  - [grep](#grep)
+  - [find](#find)
+  - [which](#which)
+  - [alias](#alias)
 
 <a id=grep></a>
 ## grep

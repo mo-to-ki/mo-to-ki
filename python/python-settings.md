@@ -1,10 +1,10 @@
 # python-settings
 目次
-> [pyenv](#pyenv)  
-    pythonのversion管理
 
-> [venv](#venv)  
-    pythonの仮想環境を作成できる
+- [python-settings](#python-settings)
+  - [pyenv](#pyenv)
+  - [venv](#venv)
+
 
 <a id="pyenv"></a>
 ## pyenv
