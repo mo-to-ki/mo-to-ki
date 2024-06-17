@@ -6,7 +6,7 @@
 > [table](#table)  
     テーブル関連
 
->  [select](#select)  
+> [select](#select)  
     テーブルのデータを取得
 
 ## データ型

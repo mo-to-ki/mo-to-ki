@@ -1,4 +1,8 @@
 # github-command
+
+参考  
+[ATLASSIAN](#https://www.atlassian.com/ja/git/tutorials)
+
 目次
 
 > [git pull](#pull)  
@@ -29,6 +33,9 @@
     コミットの編集
 
 > [git config](#config)  
+    configファイルの編集
+
+> [git reflog](#reflog)  
     configファイルの編集
 
 <a id=pull></a>
@@ -121,5 +128,23 @@ git reset --mixed HEAD~{n}
 `github`の`config`ファイルを設定するためのコマンド  
 このコマンドでは、`viエディタ`でローカルの`config`ファイルを設定することができる。
 ```shell
-git config --local -e
+git config --local --edit
 ```
+
+<a id=reflog></a>
+## git reflog
+reflog コマンドを用いると、以下のように表示されます。
+```shell
+git reflog
+# 99698e4 (HEAD -> main, origin/main, origin/HEAD) HEAD@{0}: commit: update: user
+# 7c53a64 HEAD@{1}: merge origin/main: Fast-forward
+# 46bde33 HEAD@{2}: commit: 2
+# 1e04a9a HEAD@{3}: commit: 3
+# 05f755f HEAD@{4}: commit: 4
+# 5cddd0e HEAD@{5}: commit: 5
+```
+ここで、
+```shell
+git reset HEAD@{2}
+```
+とすることで HEAD@{2} のコミットへ遡ることができます
