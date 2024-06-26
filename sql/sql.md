@@ -46,7 +46,6 @@
 | `ENUM`      | 列挙型                  |
 | `SET`       | セット型                |
 
-<a id=database></a>
 ## database
 
 データベースの一覧を表示する。  
@@ -72,7 +71,6 @@ DROP DATABASE database-name;
 DROP DATABASE IF EXIST database-name;
 ```
 
-<a id=table></a>
 ## table
 
 テーブルの一覧を表示する。  
@@ -122,7 +120,6 @@ WHERE user_type = "master" AND user_name = "motoki";
 DROP TABLE table-name;
 ```
 
-<a id=select></a>
 ## select
 
 テーブルのデータを取得する。  

@@ -2,12 +2,14 @@
 目次
 
 - [python-settings](#python-settings)
-  - [pyenv](#pyenv)
-  - [venv](#venv)
+  - [package](#package)
+    - [pyenv](#pyenv)
+  - [pip library](#pip-library)
+    - [venv](#venv)
 
 
-<a id="pyenv"></a>
-## pyenv
+## package
+### pyenv
 `python`の`version`管理を行うことがでる。  
 `brew`ででインストールして、`$PATH`を通すことで使用することがでる。
 
@@ -40,8 +42,8 @@ pyenv local python-version
 pyenv {local or global} --unset
 ```
 
-<a id="venv"></a>
-## venv
+## pip library
+### venv
 仮想環境の作成  
 ```shell
 python -m venv env-name

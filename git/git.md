@@ -16,8 +16,8 @@
   - [git reset](#git-reset-1)
   - [git config](#git-config)
   - [git reflog](#git-reflog)
+  - [git diff](#git-diff)
 
-<a id=pull></a>
 ## git pull
 
 これでリモートの`remote-branch`が`local-branch`に統合される。
@@ -25,7 +25,6 @@
 git pull origin remote-branch:local-branch
 ```
 
-<a id=fetch></a>
 ## git fetch
 
 これでリモートの`origin`がダウンロードされ、`merge`することでローカルに統合できるようになる。
@@ -33,7 +32,6 @@ git pull origin remote-branch:local-branch
 git fetch origin
 ```
 
-<a id=merge></a>
 ## git merge
 
 `dev branch`にいる場合、以下で`dev branch`にリモートの`merge-branch`を統合する。
@@ -41,7 +39,6 @@ git fetch origin
 git merge origin/merge-branch
 ```
 
-<a id=checkout></a>
 ## git checkout
 
 これでリモートの`old-branch`を元に`new-branch`を作成する。
@@ -49,7 +46,6 @@ git merge origin/merge-branch
 git checkout -b new-branch origin/old-branch
 ```
 
-<a id=clone></a>
 ## git clone
 
 リモートリポジトリをダウンロードする。  
@@ -57,7 +53,6 @@ git checkout -b new-branch origin/old-branch
 git clone https://user-name:token@github.com/username/repo.git
 ```
 
-<a id=reset></a>
 ## git reset
 
 `n`個のコミットを削除する。 
@@ -69,7 +64,6 @@ git clone https://user-name:token@github.com/username/repo.git
 git reset --soft HEAD~{n}
 ```
 
-<a id=show></a>
 ## git show
 
 コミットの変更内容を表示する。
@@ -77,7 +71,6 @@ git reset --soft HEAD~{n}
 git show
 ```
 
-<a id=rebase></a>
 ## git rebase
 
 コミットを編集する。  
@@ -86,7 +79,6 @@ git show
 git rebase -i HEAD~{n}
 ```
 
-<a id=reset></a>
 ## git reset
 
 ステージングエリアの情報を保持したままコミットを削除する。  
@@ -101,7 +93,6 @@ git reset --soft HEAD~{n}
 git reset --mixed HEAD~{n}
 ```
 
-<a id=config></a>
 ## git config
 
 `github`の`config`ファイルを設定するためのコマンド  
@@ -110,7 +101,6 @@ git reset --mixed HEAD~{n}
 git config --local --edit
 ```
 
-<a id=reflog></a>
 ## git reflog
 reflog コマンドを用いると、以下のように表示されます。
 ```shell
@@ -127,3 +117,14 @@ git reflog
 git reset HEAD@{2}
 ```
 とすることで HEAD@{2} のコミットへ遡ることができます
+
+## git diff
+commit と add 前の比較
+```shell
+git diff
+```
+
+commit と add 後の比較
+```shell
+git diff --cached
+```

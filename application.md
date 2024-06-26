@@ -1,6 +1,6 @@
-# Convinient
+# application
 
-- [Convinient](#convinient)
+- [application](#application)
   - [clipy](#clipy)
   - [skitch](#skitch)
   - [1password](#1password)

@@ -9,7 +9,6 @@
   - [compose](#compose)
     - [up](#up)
 
-<a id=image></a>
 ## image
 
 ### build
@@ -20,7 +19,6 @@ Dockerfile から image を作成する。
 docker image build --tag test_image .
 ```
 
-<a id=container></a>
 ## container
 
 ### run
@@ -37,7 +35,6 @@ docker container run -d -it --name test_container test_image
 docker container exec -it test_container /bin/bash
 ```
 
-<a id=compose></a>
 ## compose
 
 ### up

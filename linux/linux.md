@@ -6,7 +6,6 @@
   - [which](#which)
   - [alias](#alias)
 
-<a id=grep></a>
 ## grep
 ファイル内の文字列検索を行うコマンド
 
@@ -30,7 +29,6 @@ grep -r  -l 'search_string' /path/
 grep --color=auto 'search_string'
 ```
 
-<a id=find></a>
 ## find
 
 特定の文字列を含むファイルやディレクトリの検索を行うコマンド  
@@ -39,7 +37,6 @@ grep --color=auto 'search_string'
 find /path/ -type f -name '*search_string*'
 ```
 
-<a id=which></a>
 ## which
 
 特定の文字列を含む実行ファイルの検索を行うコマンド  
@@ -48,7 +45,6 @@ find /path/ -type f -name '*search_string*'
 which pyhton
 ```
 
-<a id=alias></a>
 ## alias
 
 コマンドを省略して実行するためのエイリアスを設定するコマンド

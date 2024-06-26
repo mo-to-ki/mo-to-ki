@@ -11,10 +11,10 @@
     - [thunder client](#thunder-client)
     - [SQLTools](#sqltools)
     - [Markdown All in One](#markdown-all-in-one)
+    - [Markdown Preview Mermaid Support](#markdown-preview-mermaid-support)
   - [python](#python)
     - [flake8](#flake8)
 
-<a id=general></a>
 
 ## general
 
@@ -45,8 +45,9 @@ AIが自動で適切なコードを作成してくれる。
 ### Markdown All in One
 マークダウンを綺麗に書くことができる
 
-___
-<a id=python></a>
+### Markdown Preview Mermaid Support
+マークダウンに書いた mermaid ファイルを出力することができる。
+
 
 ## python
 
