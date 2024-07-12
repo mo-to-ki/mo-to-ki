@@ -8,15 +8,16 @@
   - [git pull](#git-pull)
   - [git fetch](#git-fetch)
   - [git merge](#git-merge)
-  - [git checkout](#git-checkout)
+  - [git brach](#git-brach)
   - [git clone](#git-clone)
   - [git reset](#git-reset)
   - [git show](#git-show)
   - [git rebase](#git-rebase)
   - [git reset](#git-reset-1)
+  - [git diff](#git-diff)
   - [git config](#git-config)
   - [git reflog](#git-reflog)
-  - [git diff](#git-diff)
+  - [git stash](#git-stash)
 
 ## git pull
 
@@ -39,27 +40,33 @@ git fetch origin
 git merge origin/merge-branch
 ```
 
-## git checkout
+## git brach
 
-これでリモートの`old-branch`を元に`new-branch`を作成する。
+今いる branch から {{ new-branch }} を派生して作成する。
 ```shell
-git checkout -b new-branch origin/old-branch
+git branch new-branch
 ```
+
 
 ## git clone
 
 リモートリポジトリをダウンロードする。  
 ```shell
-git clone https://user-name:token@github.com/username/repo.git
+git clone https://{{ user-name }}:{{ token }}@github.com/username/repo.git
 ```
 
 ## git reset
 
 `n`個のコミットを削除する。 
 
-ただし、   
-`--soft`を使った場合、ワーキングエリアとステージングエリアには情報を保持する。  
-`--mixed`を使った場合、ワーキングエリアには情報を保持する。 
+> `--soft`  
+ワーキングエリアとステージングエリアには情報を保持する。  
+
+> `--mixed`  
+ワーキングエリアには情報を保持する。  
+
+> `--hard`  
+全て削除する。
 ```shell
 git reset --soft HEAD~{n}
 ```
@@ -93,20 +100,32 @@ git reset --soft HEAD~{n}
 git reset --mixed HEAD~{n}
 ```
 
-## git config
 
+## git diff
+commit と add 前の比較
+```shell
+git diff
+```
+commit と add 後の比較
+```shell
+git diff --cached
+```
+
+
+## git config
 `github`の`config`ファイルを設定するためのコマンド  
 このコマンドでは、`viエディタ`でローカルの`config`ファイルを設定することができる。
 ```shell
 git config --local --edit
 ```
 
+
 ## git reflog
 reflog コマンドを用いると、以下のように表示されます。
 ```shell
 git reflog
-# 99698e4 (HEAD -> main, origin/main, origin/HEAD) HEAD@{0}: commit: update: user
-# 7c53a64 HEAD@{1}: merge origin/main: Fast-forward
+# 99698e4 HEAD@{0}: commit: 0
+# 7c53a64 HEAD@{1}: commit: 1
 # 46bde33 HEAD@{2}: commit: 2
 # 1e04a9a HEAD@{3}: commit: 3
 # 05f755f HEAD@{4}: commit: 4
@@ -118,13 +137,29 @@ git reset HEAD@{2}
 ```
 とすることで HEAD@{2} のコミットへ遡ることができます
 
-## git diff
-commit と add 前の比較
-```shell
-git diff
-```
 
-commit と add 後の比較
+## git stash
+commit していない差分を保存する
 ```shell
-git diff --cached
+git stash save "{{ stash につけたい名前 }}"
+```
+保存してある stash を確認する
+```shell
+git stash list
+# stash@{0}: stash: 0
+# stash@{1}: stash: 1
+# stash@{2}: stash: 2
+# stash@{3}: stash: 3
+```
+保存してある stash を適用して削除
+```shell
+git stash pop stash@{0}
+```
+保存してある stash を適用
+```shell
+git stash apply stash@{0}
+```
+保存してある stash の削除
+```shell
+git stash drop stash@{0}
 ```
