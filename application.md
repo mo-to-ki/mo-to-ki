@@ -4,6 +4,7 @@
   - [clipy](#clipy)
   - [skitch](#skitch)
   - [1password](#1password)
+  - [OrbStack](#orbstack)
 
 ## clipy
 copy and paste が管理できる。
@@ -13,3 +14,13 @@ copy and paste が管理できる。
 
 ## 1password
 いろんなパスワードが管理できる。
+
+## OrbStack
+mac で docker を高速で動かせる。  
+```shell
+brew install orbstack
+```
+OrbStack の起動
+```shell
+orb
+```
